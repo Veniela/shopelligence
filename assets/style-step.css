@@ -1,7 +1,6 @@
 /* =========================================================
    STEPS / TIMELINE — mobile first
    ========================================================= */
-
 #steps {
     position: relative;
     padding: 70px 20px 80px;
@@ -16,7 +15,6 @@
 }
 
 /* ---------- HEADER ---------- */
-
 #steps .section-label {
     justify-content: flex-start;
     margin-bottom: 16px;
@@ -27,19 +25,16 @@
     margin: 0 0 48px;
     max-width: 320px;
     margin-inline: auto;
-
     font-family: var(--serif);
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.15;
     letter-spacing: -0.02em;
     text-align: center;
-
     color: #f4f0e9;
 }
 
 /* ---------- TIMELINE ---------- */
-
 .steps-timeline {
     position: relative;
     display: flex;
@@ -60,27 +55,22 @@
 }
 
 /* ---------- STEP ITEM ---------- */
-
 .step-item {
     position: relative;
     width: 100%;
 }
 
 /* ---------- MARKER ---------- */
-
 .step-marker {
     position: absolute;
     top: 18px;
     left: -41px;
     z-index: 2;
-
     width: 16px;
     height: 16px;
-
     border: 2px solid #f57b20;
     border-radius: 50%;
     background: #0d0d0d;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,17 +102,14 @@
 }
 
 /* ---------- CARD ---------- */
-
 .step-card {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     gap: 14px;
 
-    
     min-height: auto;
     padding: 18px;
-
     background: #161616;
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 12px;
@@ -133,16 +120,13 @@
 }
 
 /* ---------- ICON ---------- */
-
 .step-icon {
     flex-shrink: 0;
     width: 44px;
     height: 44px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border-radius: 10px;
     background: #1f1f1f;
 }
@@ -154,6 +138,12 @@
     filter: brightness(0) invert(1);
 }
 
+.step-icon svg {
+    width: 22px;
+    height: 22px;
+    color: #fff;
+}
+
 /* last step icon — orange */
 .step-card-last .step-icon {
     background: #f57b20;
@@ -163,8 +153,11 @@
     filter: brightness(0) invert(1);
 }
 
-/* ---------- TEXT ---------- */
+.step-card-last .step-icon svg {
+    color: #fff;
+}
 
+/* ---------- TEXT ---------- */
 .step-content {
     flex: 1;
     min-width: 0;
@@ -172,40 +165,33 @@
 
 .step-meta {
     margin-bottom: 4px;
-
     font-family: "DM Sans", sans-serif;
     font-size: 0.55rem;
     font-weight: 500;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-
     color: #8a8680;
 }
 
 .step-content h3 {
     margin: 0 0 6px;
-
     font-family: var(--serif);
     font-size: 1.05rem;
     font-weight: 400;
     line-height: 1.2;
-
     color: #f4f0e9;
 }
 
 .step-content p {
     margin: 0;
-
     font-family: "DM Sans", sans-serif;
     font-size: 0.78rem;
     font-weight: 400;
     line-height: 1.5;
-
     color: #a09b94;
 }
 
 /* ---------- CHANNEL TAGS ---------- */
-
 .channel-tags {
     display: flex;
     flex-wrap: wrap;
@@ -215,22 +201,18 @@
 
 .channel-tags span {
     padding: 5px 10px;
-
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 999px;
     background: rgba(255, 255, 255, 0.04);
-
     font-family: "DM Sans", sans-serif;
     font-size: 0.58rem;
     line-height: 1;
-
     color: #d4cfc6;
 }
 
 /* =========================================================
    TABLET  ≥ 769px
    ========================================================= */
-
 @media (min-width: 769px) {
     #steps {
         padding: 82px 24px 90px;
@@ -279,7 +261,6 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-
         min-height: 220px;
         padding: 22px 16px 20px;
     }
@@ -291,6 +272,11 @@
     }
 
     .step-icon img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .step-icon svg {
         width: 24px;
         height: 24px;
     }
@@ -317,7 +303,6 @@
 /* =========================================================
    DESKTOP  ≥ 1024px
    ========================================================= */
-
 @media (min-width: 1024px) {
     #steps {
         padding: 92px 28px 100px;
@@ -360,7 +345,6 @@
 /* =========================================================
    SMALL MOBILE
    ========================================================= */
-
 @media (max-width: 420px) {
     #steps {
         padding-left: 16px;
@@ -393,6 +377,11 @@
     }
 
     .step-icon img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .step-icon svg {
         width: 20px;
         height: 20px;
     }
